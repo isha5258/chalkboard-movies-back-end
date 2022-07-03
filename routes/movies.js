@@ -5,7 +5,7 @@ const router = Router()
 
 /*--------Public Routes -----------*/
 
-router.get('/:name', moviesCtrl.getMovie)
+router.get('/:name', moviesCtrl.searchMovie)
 
 
 export {
