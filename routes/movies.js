@@ -7,6 +7,8 @@ const router = Router()
 
 router.get('/:name', moviesCtrl.searchMovie)
 
+router.get('/popular', moviesCtrl.popularMovie')
+
 
 export {
   router

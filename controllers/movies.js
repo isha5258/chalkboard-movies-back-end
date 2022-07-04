@@ -12,6 +12,10 @@ function searchMovie(req, res) {
   console.log(req.params.name)
 }
 
+function popularMovies (req, res){
+  console.log('sanity')
+}
+
 export {
   searchMovie,
 }
