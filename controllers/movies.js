@@ -8,11 +8,13 @@ function searchMovies(req, res) {
   .then(response => {
     res.json(response.data)
   })
-
 }
 
 function popularMovies (req, res){
-  console.log('sanity')
+  axios.get(`${baseURL}/3/movie/popular?api_key=${process.env.MOVIE_KEY}&language=en-US&page=1`)
+  .then(response => {
+    res.json(response.data)
+  })
 }
 
 export {
