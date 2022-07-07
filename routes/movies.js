@@ -7,6 +7,8 @@ const router = Router()
 
 router.get('/popular', moviesCtrl.popularMovies)
 
+router.get('/genre', moviesCtrl.movieGenre)
+
 router.get('/:movie', moviesCtrl.searchMovies)
 
 router.get('/:movie/recommendations', moviesCtrl.recommendedMovies)

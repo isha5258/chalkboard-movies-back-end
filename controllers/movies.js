@@ -21,8 +21,13 @@ function recommendedMovies(req, res){
   console.log('sanity')
 }
 
+function movieGenre(req, res) {
+  console.log('sanity for genre')
+}
+
 export {
   searchMovies,
   popularMovies,
-  recommendedMovies
+  recommendedMovies,
+  movieGenre,
 }
