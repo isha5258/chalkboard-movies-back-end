@@ -9,4 +9,11 @@ function index(req, res) {
   })
 }
 
-export { index }
+function addMovie(req, res) {
+  console.log('sanity')
+}
+
+export { 
+  index,
+  addMovie, 
+}
