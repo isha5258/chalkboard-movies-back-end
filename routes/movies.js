@@ -11,7 +11,7 @@ router.get('/genre', moviesCtrl.movieGenre)
 
 router.get('/:name', moviesCtrl.searchMovies)
 
-router.get('/:movie/recommendations', moviesCtrl.recommendedMovies)
+router.get('/:movieId/recommendations', moviesCtrl.recommendedMovies)
 
 
 

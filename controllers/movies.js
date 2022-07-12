@@ -17,11 +17,22 @@ function popularMovies (req, res){
 }
 
 function recommendedMovies(req, res){
-  console.log('sanity')
+  console.log(req.params.movieId)
+  axios.get(`${baseURL}/3/movie/${req.params.movieId}/recommendations?api_key=${process.env.MOVIE_KEY}&language=en-US&page=1`)
+  .then(response => {
+    res.json(response.data)
+  })
+  .catch(err => {
+    console.log(err)
+    res.status(500).json(err)
+  })
 }
 
 function movieGenre(req, res) {
-  console.log('sanity for genre')
+  axios.get(`${baseURL}/3/genre/movie/list?api_key=${process.env.MOVIE_KEY}&language=en-US&query=sonic&page=1&include_adult=false`)
+  .then(response => {
+    res.json(response.data)
+  })
 }
 
 export {
