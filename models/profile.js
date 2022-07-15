@@ -17,8 +17,6 @@ const profileSchema = new Schema({
   name: String,
   photo: String,
   movie: [movieSchema],
-  //Need to look into why referenced schema is not working
-  // {type: Schema.Types.ObjectId, ref: 'Movie'}
 },{
     timestamps: true,
 })
